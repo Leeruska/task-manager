@@ -1,5 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace, sans-serif;
+    background-color: #9b9e9d;
+    margin: 20px;
 }
 
 h1 {
@@ -9,6 +11,7 @@ h1 {
 form {
     text-align: center;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 ul {
@@ -16,20 +19,55 @@ ul {
     padding: 0;
 }
 
-li {
-    margin: 10px 0;
+.task-container {
+    margin: 0 auto;
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    background-color: #738f9e;
+}
+
+li {
+    margin: 10px 20px;
+    padding:5px;
+    display: flex;
+}
+
+li > a {
+    border: 2px solid blue;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 a {
     margin-left: 10px;
     text-decoration: none;
-    color: blue;
+    color: #df8b84;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: red
+    text-decoration: underline; /* leave this for accessibility, if colors are not enough to differ */
+    color: #991a64;
+}
+
+.completed {
+    font-style: italic;
+    color: #325221;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #861657;
+}
+
+footer a:hover {
+    font-style: italic;
+    color: #325221;
 }
