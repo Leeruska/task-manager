@@ -1,1 +1,52 @@
-/.venv
+# This .gitignore file covers the basic files and directories to ignore. Some recommended by Copilot.
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.venv/
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyInstaller
+*.spec
+
+# Sphinx documentation
+docs/_build/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
